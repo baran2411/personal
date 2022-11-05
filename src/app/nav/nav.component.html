@@ -1,0 +1,25 @@
+<div class="fixNav"></div>
+<nav>
+    <div class="container">
+        <h1>Baran</h1>
+  
+      <div class="menu">
+        <a routerLink="/music">School</a>
+        <a routerLink="/projects">Projects</a>
+        <a routerLink="/about me">Music</a>
+        <a routerLink="/contact">About me</a>
+      </div>
+  
+      <button class="hamburger" [class.is-active]="status" (click)="accessStatus()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+</nav>
+<nav class="mobile-nav" [class.is-active]="status">
+    <a routerLink="/music">School</a>
+    <a routerLink="/projects">Projects</a>
+    <a routerLink="/about me">Music</a>
+    <a routerLink="/contact">About me</a>
+</nav>
